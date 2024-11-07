@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tablas y formularios</title>
+</head>
+<body>
+    <h1>Tablas y Formularios</h1>
+    <hr>
+    <br>
+    <h2>Tablas </h2>
+
+    <!--comando table para generar tablas -->
+    <table border="1px">
+        <!--tr crea las columas -->
+        <tr>
+            <!--Th negritas en tablas -->
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Correo</th>
+        </tr>
+
+        <tr>
+            <!--td genera las filas -->
+            <td>Aldo</td>
+            <td>Ledesma</td>
+            <td>aldo@dev.mx</td>
+        </tr>
+
+        <tr>
+            <td>daniel</td>
+            <td>Santamaria</td>
+            <td>danielsasa1@hotmail.com</td>
+        </tr>
+    </table>
+
+    <br>
+    <hr>
+
+    <h2>Formularios</h2>
+
+    <form action="archivo_que_precesa_los_datos.php">
+        <<!--atributos aceptados:por el imput de texto, placeholder, value,  required, disable, name-->
+        <label for="nombre_de_usuario">Nombre:</label>
+        <input name="nombre_de_usuario" type="text" placeholder="Nombre" required>
+
+        <label for="correo">Email:</label>
+        <input name="correo" type="email" placeholder="E-mail" required>
+
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input name="Password" type="password" placeholder="Contraseña" required>
+
+        <br><br>
+        <!--Text area-->
+        <label for="comentarios">Comentarios:</label>
+        <br>
+        <textarea name="comentarios" rows="6" cols="50"></textarea>
+
+        <br><br>
+
+        <!--hidden=esconder opciones -->
+        <!--select=opcion seleccionada por defecto  -->
+        <label for="sabores">Sabores</label>
+        <select name="sabores">
+            <option value="" selected disabled hidden>Selecciona una opcion </option>
+            <option value="Vainilla">Vainilla</option>
+            <option value="Limon">Limon</option>
+            <option value="Chocolate">Chocolate</option>
+        </select>
+
+        <br><br>
+
+        <!-- radio-->
+        <label for="genero">Genero</label>
+        <br>
+        <input type="radio" name="genero"> Masculino
+        <input type="radio" name="genero"> Femenino
+
+        <br><br>
+
+        <!--checkbox-->
+
+        <label for="terminos">Aceptas nuestros terminos y condiciones </label>
+        <br>
+        <input type="checkbox">Si
+
+        <br><br>
+        <!--Enviar / submit-->
+        <button type="submit">Enviar</button>
+
+
+
+    </form>
+
+
+
+</body>
+</html>
